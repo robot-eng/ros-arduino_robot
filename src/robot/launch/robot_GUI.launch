@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="rosserial_python" type="serial_node.py" name="serial_arduino">
+    <param name="port" value="/dev/ttyUSB0" />
+    <param name="baud" value="115200" />
+  </node>
+  <node pkg="rqt_robot_steering" type="rqt_robot_steering" name="rqt_robot_steering">
+  </node>
+</launch>
